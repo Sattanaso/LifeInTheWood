@@ -1,6 +1,6 @@
 package Interfaces;
 
-public interface IHunter {
+public interface IHunter extends ICreation {
 	Integer getAccuracy();
 	
 	Object shoot();

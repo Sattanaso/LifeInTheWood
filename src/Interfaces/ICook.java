@@ -1,5 +1,6 @@
 package Interfaces;
 
-public interface ICook {
-	void cook();
+public interface ICook extends ICreation {
+	
+	Object cook();
 }

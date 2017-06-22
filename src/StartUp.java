@@ -1,5 +1,4 @@
 import Enums.Sex;
-import Interfaces.IHunter;
 import Models.Humans.*;
 import Models.Utils.Point;
 
@@ -9,6 +8,8 @@ public class StartUp {
 		
 		Hunter hunt = new Hunter("Mladenov", "Petar", Sex.Male);
 		Hunter hunt1 = new Hunter("Mladenov", "Petar", Sex.Male, 92);
+		
+		
 
 		Point huntPosition = new Point(33, 66);
 		hunt.setPosition(huntPosition);

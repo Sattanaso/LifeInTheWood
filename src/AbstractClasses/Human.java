@@ -3,7 +3,6 @@ package AbstractClasses;
 import Enums.Sex;
 import Interfaces.IHuman;
 import Interfaces.IMoveable;
-import Models.Utils.FullName;;
 
 public abstract class Human extends Creation implements IMoveable, IHuman {
 	protected Human() {

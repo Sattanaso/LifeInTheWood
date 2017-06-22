@@ -1,5 +1,5 @@
 package Interfaces;
 
-public interface IFisher {
-
+public interface IFisher extends ICreation {
+	
 }
