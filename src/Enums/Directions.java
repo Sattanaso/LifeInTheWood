@@ -1,5 +1,5 @@
 package Enums;
 
 public enum Directions {
-	East, West, North, South
+	East, North, South, West
 }

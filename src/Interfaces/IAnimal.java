@@ -1,5 +1,6 @@
 package Interfaces;
 
 public interface IAnimal {
-	boolean isTerrestrial();
+	boolean canWalk();
+	boolean canSwim();
 }
