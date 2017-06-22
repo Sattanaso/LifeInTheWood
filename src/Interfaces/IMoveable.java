@@ -1,9 +1,10 @@
 package Interfaces;
 
+import Enums.Direction;
 import Models.Utils.Point;
 
 public interface IMoveable {
-	void move();
+	void move(Direction dir);
 	
 	void moveTo(Point point);
 	

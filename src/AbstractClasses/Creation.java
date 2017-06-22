@@ -1,9 +1,10 @@
 package AbstractClasses;
 
 import Enums.Sex;
+import Interfaces.ICreation;
 import Models.Utils.Point;
 
-public abstract class Creation {
+public abstract class Creation implements ICreation {
 	private boolean isAlive;
 	private Sex sex;
 	private String family;
@@ -11,13 +12,15 @@ public abstract class Creation {
 	private Point position;
 
 	// =============================================
+	
 	protected Creation() {
 	}
 
 	protected Creation(String family, String name, Sex sex) {
 		setIsAlive(true);
-		setFamily(family);
-		setName(name);
+		setFamilyName(family);
+		setOwnerName(name);
+		setSex(sex);
 	}
 
 	// =============================================
@@ -26,7 +29,7 @@ public abstract class Creation {
 		return this.isAlive;
 	}
 
-	protected void setIsAlive(boolean isAlive) {
+	public void setIsAlive(boolean isAlive) {
 		this.isAlive = isAlive;
 	}
 
@@ -42,21 +45,21 @@ public abstract class Creation {
 
 	// =============================================
 
-	public String getFamily() {
+	public String getFamilyName() {
 		return this.family;
 	}
 
-	public void setFamily(String family) {
+	public void setFamilyName(String family) {
 		this.family = family;
 	}
 
 	// =============================================
 
-	public String getName() {
+	public String getOwnerName() {
 		return this.name;
 	}
 
-	public void setName(String name) {
+	public void setOwnerName(String name) {
 		if (name != null) {
 			this.name = name;
 		}
@@ -72,5 +75,10 @@ public abstract class Creation {
 		this.position = position;
 	}
 
+
+	@Override
+	public String toString() {
+		return String.format("%s %s", this.getFamilyName(), this.getOwnerName());
+	}
 	// =============================================
 }

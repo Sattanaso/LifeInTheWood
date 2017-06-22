@@ -1,5 +1,5 @@
 package Interfaces;
 
-public interface IHuman {
+public interface IHuman extends ICreation {
 	
 }
